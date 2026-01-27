@@ -1,0 +1,6 @@
+@CutNgoAPI_HostAddress = http://localhost:5206
+
+GET {{CutNgoAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
