@@ -1,4 +1,5 @@
 using Scalar.AspNetCore;
+using CutNgoDomain.Services;
 using CutNgoAPI.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,6 +22,10 @@ app.UseHttpsRedirection();
 //Endpoints
 app.MapCustomerEndpoints();
 app.MapEmployeeEndpoints();
+
+var service = new MockDataService();
+var bookings = service.GetBookings();
+
 
 
 app.Run();
