@@ -8,6 +8,8 @@ public static class EmployeeEndpoints
         app.MapGet("/employees/{id}", (int id) => $"Get employee with ID {id}");
         app.MapPost("/employees", () => "Create a new employee");
         app.MapPut("/employees/{id}", (int id) => $"Update employee with ID {id}");
-        app.MapDelete("/employees/{id}", (int id) => $"Delete employee with ID {id}");
+        app.MapDelete("/employees/{id}", (int id) => $"Delete employee with ID {id}"); 
+       
+
     }
 }
