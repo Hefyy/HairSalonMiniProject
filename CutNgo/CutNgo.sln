@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36915.13 d17.14
+VisualStudioVersion = 17.14.36915.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CutNgoAPI", "CutNgoAPI\CutNgoAPI.csproj", "{C0FAD523-A0DB-42F3-AC12-2ABB45FA6131}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CutNgoDomain", "CutNgoDomain\CutNgoDomain.csproj", "{5D3E5148-E708-4DF8-80FB-B227FFB45669}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CutNgoWeb", "CutNgoWeb\CutNgoWeb.csproj", "{20F28A11-DAEC-4666-930B-9A0BBBD3610F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5D3E5148-E708-4DF8-80FB-B227FFB45669}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D3E5148-E708-4DF8-80FB-B227FFB45669}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D3E5148-E708-4DF8-80FB-B227FFB45669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20F28A11-DAEC-4666-930B-9A0BBBD3610F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20F28A11-DAEC-4666-930B-9A0BBBD3610F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20F28A11-DAEC-4666-930B-9A0BBBD3610F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20F28A11-DAEC-4666-930B-9A0BBBD3610F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

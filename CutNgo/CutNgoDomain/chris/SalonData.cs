@@ -18,7 +18,7 @@ public static class SalonData
 
     public static List<Booking> Bookings { get; } = new()
     {
-        new Booking() { Id = 1, CustomerId = 1, EmployeeId = 1, TreatmentType = "color", Date = new DateTime(2026, 2, 1, 10, 0, 0)},
-        new Booking() { Id = 2, CustomerId = 2, EmployeeId = 2, TreatmentType= "cut", Date = new DateTime(2026, 2, 2, 12, 0, 0)},
+        new Booking() { Id = 1, CustomerId = 1, EmployeeId = 1, Role = "Frisør", TreatmentType = "color", Date = new DateTime(2026, 2, 1, 10, 0, 0)},
+        new Booking() { Id = 2, CustomerId = 2, EmployeeId = 2, Role = "Frisør", TreatmentType= "cut", Date = new DateTime(2026, 2, 2, 12, 0, 0)},
     };
 }

@@ -1,0 +1,18 @@
+﻿@page "/dashboard"
+
+@using CutNgoDomain.chris;
+
+<PageTitle>Dashboard</PageTitle>
+
+<h1>Dashboard</h1>
+
+@if (bookings == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <div class="dashboardBox">
+
+    </div>
+}
