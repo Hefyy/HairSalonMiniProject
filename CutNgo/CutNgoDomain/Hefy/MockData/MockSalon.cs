@@ -2,7 +2,7 @@
 
 namespace CutNgoDomain.Hefy.MockData;
 
-class MockSalon
+public class MockSalon
 {
     public List<Employee> Staff { get; } = [];
     public List<Customer> Customers { get; } = [];
@@ -10,7 +10,7 @@ class MockSalon
     public List<Appointment> Appointments { get; } = [];
     
 
-    public IEnumerable<Appointment> GetDailySchedule(Guid employeeId, DateOnly date)
+    public IEnumerable<Appointment> GetDailySchedule(int employeeId, DateOnly date)
     {
         return Appointments
             .Where(a => a.EmployeeId == employeeId)
