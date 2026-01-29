@@ -6,5 +6,6 @@ public class Booking
     public DateTime Date { get; set; }
     public int CustomerId { get; set; }
     public int EmployeeId { get; set; }
+    public string Role { get; set; }
     public string TreatmentType { get; set; }
 }

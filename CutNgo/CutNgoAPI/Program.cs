@@ -22,6 +22,7 @@ app.UseHttpsRedirection();
 //Endpoints
 app.MapCustomerEndpoints();
 app.MapEmployeeEndpoints();
+app.MapBookingEndpoints();
 
 var service = new MockDataService();
 var bookings = service.GetBookings();
