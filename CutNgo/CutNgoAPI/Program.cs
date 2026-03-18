@@ -22,6 +22,7 @@ app.UseHttpsRedirection();
 app.MapCustomerEndpoints();
 app.MapEmployeeEndpoints();
 app.MapBookingEndpoints();
+app.MapTreatmentEndpoints();
 
 
 app.Run();
