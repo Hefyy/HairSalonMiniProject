@@ -1,4 +1,4 @@
-﻿namespace CutNgoDomain.Hefy.Models.Enums;
+﻿namespace CutNgoDomain.Models.Enums;
 
 public enum Roles
 {

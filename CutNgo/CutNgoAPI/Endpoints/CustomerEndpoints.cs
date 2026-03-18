@@ -1,4 +1,4 @@
-﻿using CutNgoDomain.chris;
+﻿using CutNgoDomain.MockData;
 
 namespace CutNgoAPI.Endpoints;
 
@@ -6,7 +6,9 @@ public static class CustomerEndpoints
 {
     public static void MapCustomerEndpoints(this IEndpointRouteBuilder app)
     {
-        app.MapGet("/customers", () => { return SalonData.Customers; });
+        var group = app.MapGroup("/api/customers").WithTags("Customers");
+
+        group.MapGet("/", () => { return SalonData.Customers; });
         
     }
 }

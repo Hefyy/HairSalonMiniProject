@@ -1,4 +1,4 @@
-﻿namespace CutNgoDomain.Hefy.Models;
+﻿namespace CutNgoDomain.Models;
 
 public class Treatment
 {
