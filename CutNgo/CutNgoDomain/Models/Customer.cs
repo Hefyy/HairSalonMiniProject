@@ -1,5 +1,5 @@
 ﻿
-namespace CutNgoDomain.Hefy.Models;
+namespace CutNgoDomain.Models;
 
 public class Customer
 {
@@ -8,5 +8,5 @@ public class Customer
     public string Email { get; set; } = string.Empty;
     public string Password { get; set; } = string.Empty;
 
-    public ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
+    public ICollection<Booking> Appointments { get; set; } = new List<Booking>();
 }

@@ -1,4 +1,6 @@
-﻿namespace CutNgoDomain.chris;
+﻿using CutNgoDomain.Models.Enums;
+
+namespace CutNgoDomain.Models;
 
 public class Booking
 {
@@ -6,6 +8,6 @@ public class Booking
     public DateTime Date { get; set; }
     public int CustomerId { get; set; }
     public int EmployeeId { get; set; }
-    public string Role { get; set; }
-    public string TreatmentType { get; set; }
+    public int TreatmentId { get; set; }
+    public BookingStatuses Status { get; set; }
 }
