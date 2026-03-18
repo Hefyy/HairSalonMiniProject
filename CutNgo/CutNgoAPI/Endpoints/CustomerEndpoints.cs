@@ -1,4 +1,5 @@
 ﻿using CutNgoDomain.MockData;
+using CutNgoDomain.Models;
 
 namespace CutNgoAPI.Endpoints;
 
