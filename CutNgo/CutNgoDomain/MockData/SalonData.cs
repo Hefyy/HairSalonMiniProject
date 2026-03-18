@@ -22,10 +22,26 @@ public static class SalonData
 
     public static List<Treatment> Treatments { get; } = new()
     {
-        //to be changed!!
-        new Treatment() { Id = 1, TreatmentTitle = "Cut", Duration = TimeSpan.FromMinutes(30), Price = 500 },
-        new Treatment() { Id = 2, TreatmentTitle = "Color", Duration = TimeSpan.FromMinutes(60), Price = 1500 },
-        new Treatment() { Id = 3, TreatmentTitle = "Style", Duration = TimeSpan.FromMinutes(45), Price = 450 }
+        
+        new Treatment() { Id = 1, TreatmentTitle = "Klip: Herrer", Duration = TimeSpan.FromMinutes(30), Price = 180 },
+        new Treatment() { Id = 2, TreatmentTitle = "Klip: Dame", Duration = TimeSpan.FromMinutes(60), Price = 250 },
+        new Treatment() { Id = 3, TreatmentTitle = "Klip: Børn (under 12 år)", Duration = TimeSpan.FromMinutes(30), Price = 170 },
+        new Treatment() { Id = 4, TreatmentTitle = "Klip: Herrer (pensionist)", Duration = TimeSpan.FromMinutes(30), Price = 170 },
+        new Treatment() { Id = 5, TreatmentTitle = "Klip: Dame (pensionist)", Duration = TimeSpan.FromMinutes(30), Price = 230 },
+
+        new Treatment() { Id = 6, TreatmentTitle = "Permanent: Kort fra", Duration = TimeSpan.FromMinutes(60), Price = 550 },
+        new Treatment() { Id = 7, TreatmentTitle = "Permanent: Mellem", Duration = TimeSpan.FromMinutes(90), Price = 750 },
+        new Treatment() { Id = 8, TreatmentTitle = "Permanent: Langt fra", Duration = TimeSpan.FromMinutes(120), Price = 950 },
+
+        new Treatment() { Id = 9, TreatmentTitle = "Striber: Kort fra", Duration = TimeSpan.FromMinutes(60), Price = 550 },
+        new Treatment() { Id = 10, TreatmentTitle = "Striber: Mellem", Duration = TimeSpan.FromMinutes(60), Price = 700 },
+        new Treatment() { Id = 11, TreatmentTitle = "Striber: Langt fra", Duration = TimeSpan.FromMinutes(90), Price = 850 },
+        new Treatment() { Id = 12, TreatmentTitle = "Striber: Hætte striber", Duration = TimeSpan.FromMinutes(45), Price = 400 },
+
+        new Treatment() { Id = 13, TreatmentTitle = "Helfarvning: Kort", Duration = TimeSpan.FromMinutes(45), Price = 450 },
+        new Treatment() { Id = 14, TreatmentTitle = "Helfarvning: Mellem", Duration = TimeSpan.FromMinutes(60), Price = 600 },
+        new Treatment() { Id = 15, TreatmentTitle = "Helfarvning: Langt", Duration = TimeSpan.FromMinutes(80), Price = 700 },
+        new Treatment() { Id = 16, TreatmentTitle = "toning- bund 2-3 cm", Duration = TimeSpan.FromMinutes(45), Price = 350}
     };
 
     public static List<Booking> Bookings { get; } = new()
