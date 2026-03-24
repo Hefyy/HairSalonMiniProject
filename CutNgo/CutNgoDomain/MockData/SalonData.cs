@@ -49,4 +49,10 @@ public static class SalonData
         new Booking() { Id = 1, CustomerId = 1, EmployeeId = 2, TreatmentId = 1, Date = new DateTime(2026, 2, 1, 10, 0, 0), Status = BookingStatuses.Completed},
         new Booking() { Id = 2, CustomerId = 2, EmployeeId = 2, TreatmentId = 2, Date = new DateTime(2026, 2, 2, 12, 0, 0), Status = BookingStatuses.Completed},
     };
+
+    public static List<Salon> Salons { get; } = new()
+    {
+        new Salon() { Id = 1, Name = "Salon Runde Tårn", Address = "Frederiksgade 1", City = "Aarhus", ZipCode = "8000", Latitude = 56.154, Longitude = 10.203 },
+        new Salon() { Id = 2, Name = "Salon H.C. Andersens Skæve Hus", Address = "Overgade 24", City = "Odense", ZipCode = "5000", Latitude = 55.399, Longitude = 10.383 }
+    };
 }
