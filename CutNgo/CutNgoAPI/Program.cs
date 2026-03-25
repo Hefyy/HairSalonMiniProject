@@ -31,5 +31,6 @@ app.MapCustomerEndpoints();
 app.MapEmployeeEndpoints();
 app.MapBookingEndpoints();
 app.MapTreatmentEndpoints();
+app.MapSalonEndpoints();
 
 app.Run();
