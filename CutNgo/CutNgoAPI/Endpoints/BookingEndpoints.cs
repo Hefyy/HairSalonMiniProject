@@ -28,6 +28,18 @@ public static class BookingEndpoints
             return booking is not null ? Results.Ok(booking) : Results.NotFound();
         });
 
+        group.MapGet("/{salonId}/{date}", (int salonId, DateOnly date) =>
+        {
+            var bookings = SalonData.Bookings
+                .Where(b =>
+                    b.SalonId == salonId &&
+                    DateOnly.FromDateTime(b.Date) == date
+                );
+
+            return bookings;
+        });
+
+
         group.MapPut("/{bookingId}", (int bookingId, Booking updatedBooking) =>
         {
             var booking = SalonData.Bookings.FirstOrDefault(b => b.Id == bookingId);
