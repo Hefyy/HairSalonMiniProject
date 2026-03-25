@@ -35,6 +35,8 @@ public static class CustomerEndpoints
             if (!string.IsNullOrWhiteSpace(updatedCustomer.Name))
             {
                 customer.Name = updatedCustomer.Name;
+                customer.Email = updatedCustomer.Email;
+                customer.Password = updatedCustomer.Password;
             }
             return Results.Ok(customer);
         });
@@ -48,6 +50,30 @@ public static class CustomerEndpoints
             }
             SalonData.Customers.Remove(customer);
             return Results.NoContent();
+        });
+
+        //group.MapPost("/login", (string email, string password) =>
+        ////TODO: make sure to use a json body - make sure the format matches with the frontend, but this is where we dictate the format.
+        //{
+        //    var customer = SalonData.Customers.FirstOrDefault(c => c.Email.Equals(email, StringComparison.OrdinalIgnoreCase) && c.Password == password); 
+        //    if (customer == null) 
+        //    { 
+        //        return Results.Unauthorized();
+        //    } 
+        //    return Results.Ok(customer); });
+
+
+
+        app.MapPost("/api/customers/login", (Login login) =>
+        {
+            var customer = SalonData.Customers.FirstOrDefault(c =>
+                c.Email.Equals(login.Email, StringComparison.OrdinalIgnoreCase) &&
+                c.Password == login.Password);
+
+            if (customer == null)
+                return Results.Unauthorized();
+
+            return Results.Ok(customer);
         });
 
     }
