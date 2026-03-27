@@ -51,6 +51,10 @@ public static class BookingEndpoints
             booking.EmployeeId = updatedBooking.EmployeeId;
             booking.TreatmentId = updatedBooking.TreatmentId;
             booking.Status = updatedBooking.Status;
+            if (updatedBooking.ImageUri != null)
+            {
+                booking.ImageUri = updatedBooking.ImageUri;
+            }
 
             return Results.Ok(booking);
         });
