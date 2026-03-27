@@ -11,4 +11,5 @@ public class Booking
     public int TreatmentId { get; set; }
     public int SalonId { get; set; }
     public BookingStatuses Status { get; set; }
+    public string? ImageUri { get; set; }
 }
